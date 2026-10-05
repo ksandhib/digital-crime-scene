@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Digital Crime Scene AI</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="app" class="hidden">
+  <header id="topbar">
+    <div class="brand"><span class="mark" aria-hidden="true"></span><span class="brand-name">Digital Crime Scene <em>AI</em></span></div>
+    <div class="stat"><span class="k">Case</span><span class="v mono" id="tb-case">#----</span></div>
+    <div class="stat"><span class="k">Status</span><span class="v stamp" id="tb-status">ACTIVE</span></div>
+    <div class="stat"><span class="k">Time elapsed</span><span class="v mono" id="tb-time">00:00:00</span></div>
+    <div class="stat"><span class="k">Evidence</span><span class="v mono" id="tb-evidence">0 / 0</span></div>
+    <div class="stat"><span class="k">Confidence</span><span class="v mono" id="tb-conf">0%</span><span class="meter"><i id="tb-conf-bar"></i></span></div>
+    <div class="spacer"></div>
+    <button class="btn ghost" id="btn-cases">Cases</button>
+  </header>
+  <nav id="nav" aria-label="Main navigation"></nav>
+  <aside id="left" class="panel"></aside>
+  <main id="center">
+    <div id="view"></div>
+    <div id="drawer" class="drawer hidden"></div>
+  </main>
+  <aside id="right" class="panel"></aside>
+  <section id="bottom" class="panel"></section>
+</div>
+
+<div id="home" class="overlay"></div>
+<div id="cinema" class="overlay hidden"></div>
+<div id="modal" class="overlay hidden"></div>
+<div id="toasts"></div>
+
+<script src="ui.js"></script>
+<script src="evidence.js"></script>
+<script src="graph.js"></script>
+<script src="timeline.js"></script>
+<script src="suspects.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

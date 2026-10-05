@@ -1,0 +1,15 @@
+# Node / Frontend
+node_modules/
+dist/
+build/
+.npm
+.eslintcache
+
+# Logs & Output
+logs/*.log
+
+# IDE / System
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
